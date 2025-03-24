@@ -21,7 +21,7 @@ const SideBar = ({ isOpen }) => {
             <aside className={`text-gray-700 p-4 transition-all ${isOpen ? "w-64" : "w-16"}`}>
                 <div className="items-center space-x-4">
                     <img
-                        src={`${isOpen ? "../public/logo.jpg" : "../public/logo-icon.jpg"}`}
+                        src={`${isOpen ? "../logo.jpg" : "../logo-icon.jpg"}`}
                         alt="Profile"
                         className=""
                     />
