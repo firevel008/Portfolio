@@ -15,7 +15,7 @@ const RoutingPage = () => {
   return useRoutes([
     {
       path: "/",
-      element: isAuthenticatedUser ? <Navigate to="/dashboard" replace /> : <LoginForm />,
+      element: isAuthenticatedUser ? <Navigate to="/home" replace /> : <LoginForm />,
     },
     {
       path: "/dashboard",
