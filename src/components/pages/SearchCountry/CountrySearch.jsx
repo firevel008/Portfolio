@@ -26,7 +26,7 @@ const CountrySearch = () => {
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-5">
                 <h5 className="text-xl font-medium text-gray-900 dark:text-white mb-3">🌎 Search for a Country</h5>
                 <p className='text-gray-500'></p>
-                <div className>
+                <div className="">
                     <div className="flex space-x-2">
                         <input
                             type="text"

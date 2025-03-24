@@ -39,12 +39,17 @@ function LoginForm({ }) {
     dispatch(login()); // stored in localStorage
     navigate("/home");
   };
-  
+
   return (
     <div className="flex min-h-screen items-center justify-center">
       <Card className="w-full max-w-md p-6 shadow-lg">
         <CardHeader>
-          <CardTitle className="text-center">Login</CardTitle>
+          <CardTitle className="text-center">
+            <h4>Login</h4>
+            <div className="items-center space-x-4 mt-2">
+              <img src="../logo.jpg" alt="Profile" className="mx-auto" />
+            </div>
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -74,7 +79,7 @@ function LoginForm({ }) {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 p-2 rounded text-white transition">
                 Login
               </Button>
             </form>

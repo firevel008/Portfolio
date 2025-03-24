@@ -14,9 +14,9 @@ const Counter = () => {
                 <p className='text-gray-500'>Count Increment and Decrement</p>
                 <div className="flex justify-around mt-5 text-center">
                     <div className="flex justify-between w-50">
-                        <Button onClick={() => dispatch(decrement())}>-</Button>
-                        <Label className="text-2xl">{values}</Label>
-                        <Button onClick={() => dispatch(increment())}>+</Button>
+                        <Button className="bg-blue-500 hover:bg-blue-600 rounded text-white transition" onClick={() => dispatch(decrement())}>-</Button>
+                        <Label className="text-2xl w-100 bg-accent justify-around">{values}</Label>
+                        <Button className="bg-blue-500 hover:bg-blue-600 rounded text-white transition" onClick={() => dispatch(increment())}>+</Button>
                     </div>
                 </div>
             </div>

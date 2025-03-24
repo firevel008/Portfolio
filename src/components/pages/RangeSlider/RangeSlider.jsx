@@ -4,11 +4,9 @@ const RangeSlider = () => {
     const [strength, setStrength] = useState(0);
     const [speed, setSpeed] = useState(0);
     const totalPoints=15;
-    console.log(totalPoints);
 
     const handleAttributeChange = (e, attributeName) => {
         const value = parseInt(e.target.value, 10);
-        console.log("Value: ", value);
         if (attributeName === "strength") {
             setStrength(value);
             if (value + speed > totalPoints) {
