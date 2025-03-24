@@ -13,7 +13,7 @@ const Dashboard = () => {
                 <Card className="mb-6 p-4 shadow-lg">
                     <CardHeader className="flex items-center space-x-4">
                         <img
-                            src="../src/assets/Profile-img.jpg"
+                            src="../public/Profile-img.jpg"
                             alt="Profile"
                             className="w-20 h-20 rounded-full border"
                         />
