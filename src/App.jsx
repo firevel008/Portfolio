@@ -19,7 +19,7 @@ function App() {
   //   checkAuth();
   // }, []);
 
-  
+
   return (
     <>
       <div className="flex h-screen w-full">

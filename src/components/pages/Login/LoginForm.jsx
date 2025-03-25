@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { ArrowBigRight, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useNavigate } from "react-router-dom";
@@ -85,6 +86,9 @@ function LoginForm({ }) {
             </form>
           </Form>
         </CardContent>
+        <div className="bg-gray-100 p-2">
+          <p className="text-gray-500 text-xs flex gap-4">Login Details <ArrowRight /> Email : vel@test.com , Password: 123</p>
+        </div>
       </Card>
     </div>
   );

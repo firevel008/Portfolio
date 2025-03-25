@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Edit, MapPin, Award, Briefcase } from "lucide-react";
+import { Edit, MapPin, Award, Briefcase, ArrowBigRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from '@/components/ui/button'
 import { NavLink, Outlet } from "react-router-dom";
