@@ -15,7 +15,7 @@ const Password = "123";
 
 const schema = z.object({
   email: z.string().email({ message: "Invalid email address" }),
-  password: z.string().min(3, { message: "Password must be at least 3 characters" }),
+  password: z.string().min({ message: "Enter Email and Password" }),
 });
 
 function LoginForm({ }) {
@@ -85,10 +85,10 @@ function LoginForm({ }) {
               </Button>
             </form>
           </Form>
+          <div className="bg-gray-100 p-2 mt-2">
+            <p className="text-gray-500 text-xs flex gap-4">Login Details <ArrowRight size={18} /> Email : vel@test.com , Password: 123</p>
+          </div>
         </CardContent>
-        <div className="bg-gray-100 p-2">
-          <p className="text-gray-500 text-xs flex gap-4">Login Details <ArrowRight /> Email : vel@test.com , Password: 123</p>
-        </div>
       </Card>
     </div>
   );
