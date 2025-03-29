@@ -48,7 +48,7 @@ function LoginForm({ }) {
           <CardTitle className="text-center">
             <h4>Login</h4>
             <div className="items-center space-x-4 mt-2">
-              <img src="../logo.jpg" alt="Profile" className="mx-auto" />
+              <img src="../V_Logo_text.png" alt="Profile" className="mx-auto" />
             </div>
           </CardTitle>
         </CardHeader>
