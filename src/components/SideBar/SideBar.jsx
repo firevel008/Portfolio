@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Menu, Home, LayoutGrid, User } from "lucide-react";
+import { Menu, Home, LayoutGrid, User, StarIcon } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const SideBar = ({ isOpen }) => {
@@ -21,15 +21,16 @@ const SideBar = ({ isOpen }) => {
             <aside className={`text-gray-700 p-4 transition-all ${isOpen ? "w-64" : "w-16"}`}>
                 <div className="items-center space-x-4">
                     <img
-                        src={`${isOpen ? "../logo.jpg" : "../logo-icon.jpg"}`}
+                        src={`${isOpen ? "../V_Logo_text.png" : "../V_Logo.png"}`}
                         alt="Profile"
                         className=""
                     />
                 </div>
                 <nav className="mt-4 space-y-4">
-                    <NavItem icon={<Home />} text="Home" path="/home" isOpen={isOpen} />
-                    <NavItem icon={<LayoutGrid />} text="Dashboard" path="/dashboard/experience" isOpen={isOpen} />
-                    <NavItem icon={<User />} text="Profile" path="/profile" isOpen={isOpen} />
+                    <NavItem icon={<Home size={15} />} text="Home" path="/home" isOpen={isOpen} />
+                    <NavItem icon={<LayoutGrid size={16} />} text="Dashboard" path="/dashboard/experience" isOpen={isOpen} />
+                    <NavItem icon={<StarIcon size={15} />} text="Ratings" path="/ratings" isOpen={isOpen} />
+                    <NavItem icon={<User size={15} />} text="Profile" path="/profile" isOpen={isOpen} />
                 </nav>
             </aside>
         </>

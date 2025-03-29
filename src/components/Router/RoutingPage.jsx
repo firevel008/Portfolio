@@ -8,10 +8,11 @@ import Skills from "../pages/Dashboard/Skills/Skills";
 import Portfolio from "../pages/Dashboard/Portfolio/Portfolio";
 import NotFound from "../pages/NotFound/NotFound";
 import Home from "../pages/Home/Home";
+import Ratings from "../pages/Ratings/Ratings";
+//import RatingCards from "../pages/Ratings/RatingCards";
 
 const RoutingPage = () => {
   const isAuthenticatedUser = useSelector((state) => state.auth.isAuthenticated);
-  
   return useRoutes([
     {
       path: "/",
@@ -28,8 +29,12 @@ const RoutingPage = () => {
       ],
     },
     {
-      path:"home",
-      element: <Home />
+      path:"/home",
+      element: isAuthenticatedUser ? <Home /> : <Navigate to="/" replace />
+    },
+    {
+      path:"/ratings",
+      element: isAuthenticatedUser ? <Ratings /> : <Navigate to="/" replace />
     },
     {
       path:"*", // Catch-all route for unknown paths

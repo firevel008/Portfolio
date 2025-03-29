@@ -122,3 +122,12 @@
     @apply bg-background text-foreground;
   }
 }
+.login-bg{
+  background-image: url("../design-studio.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.hide-arrow .lucide-chevron-down, .hide-arrow .lucide-chevron-up {
+  display: none;
+}

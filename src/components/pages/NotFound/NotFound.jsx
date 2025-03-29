@@ -2,7 +2,11 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <>
+      <div>
+        <img src="../404_page-not-found.webp" className='m-auto' />
+      </div>
+    </>
   )
 }
 
