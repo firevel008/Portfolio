@@ -47,7 +47,9 @@ const Ratings = () => {
 
     // Calculate overall rating for a section
     const getOverallRating = (sectionIndex) => {
-        return ratings[sectionIndex].reduce((acc, val) => acc + val, 0) / ratings[sectionIndex].length;
+        console.log('Section: ', ratings[sectionIndex]);
+        const overallR = ratings[sectionIndex].reduce((acc, val) => acc + val, 0) / ratings[sectionIndex].length;
+        return overallR;
     };
 
     // Update rating for a specific question
